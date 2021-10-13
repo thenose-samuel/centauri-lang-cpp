@@ -11,6 +11,6 @@ int main()
         std::cout
             << c << "\n";
     }
-    std::cout << "Exited from the Lox REPL";
+    std::cout << "Exited from the Lox Repl";
     return 0;
 }
