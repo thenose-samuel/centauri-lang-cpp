@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
     std::string line;
-    if (argv[1] == "-t")
+    if (strcmp(argv[1], "-t") == 0)
     {
         std::cout << "Welcome to the Lox Repl:" << std::endl;
         while (true)
@@ -17,14 +17,13 @@ int main(int argc, char *argv[])
         }
         std::cout << "Exited from the Lox Repl";
     }
-    else if (argv[1] == "-s")
+    else if (strcmp(argv[1], "-s") == 0)
     {
         std::cout << "Run from file" << std::endl;
     }
     else
     {
-        std::cout << "Check arguments" << std::endl;
+        std::cout << "Arguments expected. Run --help for more details" << std::endl;
     }
-    std::cout << argv[1];
     return 0;
 }
