@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
     {
         std::cout << "Run from file" << std::endl;
     }
+    //Add the help prompt
     else
     {
         std::cout << "Arguments expected. Run --help for more details" << std::endl;
